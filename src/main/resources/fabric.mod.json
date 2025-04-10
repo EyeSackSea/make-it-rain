@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "makeitrain",
+	"version": "${version}",
+	"name": "MakeItRain",
+	"description": "funny trident mod",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://creations.mtdv.me/GeJasp9IkF",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "the cool one",
+	"icon": "assets/makeitrain/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.eyesack.makeitrain.MakeItRain"
+		],
+		"fabric-datagen": [
+			"net.eyesack.makeitrain.MakeItRainDataGenerator"
+		],
+		"client" : [
+			"net.eyesack.makeitrain.MakeItRainClient"
+		]
+	},
+	"mixins": [
+		"makeitrain.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.13",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
